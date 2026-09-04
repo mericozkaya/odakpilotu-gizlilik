@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Odak Pilotu</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .tarih { opacity: .65; font-size: .9rem; margin-top: 0; }
+  .vurgu {
+    border-left: 3px solid currentColor; padding: .75rem 1rem;
+    margin: 1.25rem 0; opacity: .9;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.35); vertical-align: top; }
+  th { font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Gizlilik Politikası</h1>
+<p class="tarih">Odak Pilotu · Son güncelleme: 4 Eylül 2026</p>
+
+<p>
+  Odak Pilotu, odaklanma sürenizi bir uçuşa dönüştüren bir mobil uygulamadır.
+  Bu metin, uygulamanın hangi verileri topladığını, niçin topladığını ve bu
+  veriler üzerinde hangi haklara sahip olduğunuzu anlatır.
+</p>
+
+<div class="vurgu">
+  <strong>Kısaca:</strong> Reklam ağı kullanılmıyor, analitik veya izleme
+  hizmeti kullanılmıyor, verileriniz hiçbir üçüncü tarafa satılmıyor.
+  Konum bilginiz cihazınızdan hiç çıkmıyor.
+</div>
+
+<h2>1. Veri sorumlusu</h2>
+<p>
+  Uygulama, bireysel bir geliştirici olan <strong>Meriç Özkaya</strong>
+  tarafından geliştirilmekte ve yayınlanmaktadır.
+  İletişim: <strong>focuspilot.info@gmail.com</strong>
+</p>
+
+<h2>2. Toplanan veriler</h2>
+
+<table>
+  <tr><th>Veri</th><th>Niçin</th><th>Zorunlu mu</th></tr>
+  <tr>
+    <td>E-posta adresi</td>
+    <td>Hesap oluşturma, giriş, doğrulama kodu gönderimi</td>
+    <td>Evet</td>
+  </tr>
+  <tr>
+    <td>Pilot adı</td>
+    <td>Profilde ve sıralama tablosunda görünür</td>
+    <td>Evet</td>
+  </tr>
+  <tr>
+    <td>Profil görseli</td>
+    <td>Profilde görünür</td>
+    <td>Hayır</td>
+  </tr>
+  <tr>
+    <td>Odak/uçuş kayıtları<br>(süre, tarih, rota)</td>
+    <td>Uçuş defteri, kredi ve rütbe hesabı, havalimanı koleksiyonu</td>
+    <td>Uygulamanın işlevi</td>
+  </tr>
+  <tr>
+    <td>Havayolu üyeliği ve<br>ortak uçuş katılımı</td>
+    <td>Birlikte odaklanma özelliklerinin çalışması</td>
+    <td>Hayır</td>
+  </tr>
+  <tr>
+    <td>Bildirim jetonu</td>
+    <td>Uçuş durumu bildirimlerinin telefonunuza ulaşması</td>
+    <td>Hayır</td>
+  </tr>
+  <tr>
+    <td>Şehir ve ülke adı</td>
+    <td>Başlangıç havalimanınızın belirlenmesi</td>
+    <td>Hayır</td>
+  </tr>
+</table>
+
+<h2>3. Konum — cihazınızdan çıkmaz</h2>
+<p>
+  Uygulama, yalnızca ilk kurulumda ve yalnızca izin verirseniz konumunuzu
+  <strong>bir kez</strong> okur. Koordinatlarınız telefonunuzda işlenir:
+  uygulama, cihazın içinde yerleşik olarak bulunan 386 havalimanlık listeden
+  size en yakın olanı bulur ve sunucuya <strong>yalnızca o havalimanının
+  şehir ve ülke adını</strong> gönderir.
+</p>
+<p>
+  <strong>Enlem ve boylam bilginiz hiçbir zaman sunucuya iletilmez, hiçbir
+  yerde saklanmaz.</strong> İzni reddederseniz uygulama çalışmaya devam eder;
+  başlangıç havalimanınızı listeden kendiniz seçersiniz. Uygulama arka planda
+  konum takibi yapmaz.
+</p>
+
+<h2>4. Veriler nerede saklanıyor</h2>
+<p>
+  Hesap ve uçuş verileriniz, altyapı sağlayıcısı <strong>Supabase</strong>
+  üzerindeki bir veritabanında tutulur. Erişim, satır düzeyinde güvenlik
+  kurallarıyla sınırlandırılmıştır: her kullanıcı yalnızca kendi kaydına
+  erişebilir. Sıralama tablosunda diğer kullanıcılara görünen tek bilgi
+  pilot adınız ve toplam odak sürenizdir.
+</p>
+
+<h2>5. Paylaşım</h2>
+<p>
+  Verileriniz satılmaz, kiralanmaz, pazarlama amacıyla paylaşılmaz. Uygulamada
+  reklam ağı, analitik hizmeti veya üçüncü taraf izleme aracı bulunmamaktadır.
+  Veriler yalnızca yukarıda adı geçen altyapı sağlayıcısında, hizmetin
+  çalışması için işlenir. Yasal bir yükümlülük doğması hâlinde yetkili
+  makamlarla paylaşım yapılabilir.
+</p>
+
+<h2>6. Saklama süresi ve silme</h2>
+<p>
+  Verileriniz hesabınız var olduğu sürece saklanır. Hesabınızı sildiğinizde
+  kayıtlarınız <strong>30 gün</strong> boyunca geri getirilebilir durumda
+  tutulur; bu sürenin sonunda otomatik ve kalıcı olarak silinir. 30 gün, yanlışlıkla
+  yapılan silme işleminden dönebilmeniz içindir; süre dolduktan sonra hiçbir
+  veriniz saklanmaz.
+</p>
+<p>
+  Silme işlemini nasıl başlatacağınız ayrı bir sayfada anlatılmıştır:
+  <a href="./hesap-silme.html">Hesap Silme Talebi</a>.
+</p>
+
+<h2>7. Haklarınız</h2>
+<p>
+  6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi ve — Avrupa
+  Birliği'nde bulunuyorsanız — GDPR uyarınca; kişisel verilerinizin işlenip
+  işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini
+  isteme, işlemeye itiraz etme ve verilerinizin bir kopyasını talep etme
+  hakkına sahipsiniz. Bu talepler için <strong>focuspilot.info@gmail.com</strong> adresine
+  yazabilirsiniz. Hesabınızın kayıtlı olduğu e-posta adresinden yazmanız,
+  kimliğinizi doğrulayabilmemiz için gereklidir.
+</p>
+
+<h2>8. Çocuklar</h2>
+<p>
+  Uygulama 13 yaşın altındaki kullanıcılara yönelik değildir ve bu yaş
+  grubundan bilinçli olarak veri toplamaz.
+</p>
+
+<h2>9. Bu metindeki değişiklikler</h2>
+<p>
+  Politika güncellenirse bu sayfadaki tarih değiştirilir. Önemli bir değişiklik
+  olması hâlinde uygulama içinden bilgilendirme yapılır.
+</p>
+
+</body>
+</html>
